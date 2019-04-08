@@ -15,5 +15,10 @@ checkm data setRoot
 ### The actual binning step with metaBAT2 and maxBin2
 
 ```
-metawrap binning -a assembly.fna -o binning.d --metabat2 --maxbin2 --run-checkm *.fastq 2>&1 | tee binning.out
+metawrap binning -a assembly.fna -o binning.d --metabat2 --maxbin2 *.fastq 2>&1 | tee binning.out
 ```
+
+Running CheckM -- an important part of binning because it evaluates completeness and contamination --
+is possible to do automatically with metawrap binning, but requires more memory than you have on the
+VMs (>=40 GiB). There's a smaller memory option, but it's not exposed by MetaWRAP, so let's run CheckM
+manually.
