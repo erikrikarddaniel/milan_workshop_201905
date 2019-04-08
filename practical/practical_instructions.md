@@ -15,5 +15,5 @@ checkm data setRoot
 ### The actual binning step with metaBAT2 and maxBin2
 
 ```
-metawrap binning -a assembly.fna -o binning.d --metabat2 --maxbin2 --run-checkm *.fastq
+metawrap binning -a assembly.fna -o binning.d --metabat2 --maxbin2 --run-checkm *.fastq 2>&1 | tee binning.out
 ```
