@@ -4,16 +4,33 @@
 
 ## Installing CheckM and dependencies
 
-Create a Conda environment for CheckM and install the necessary programs:
+Full installation instructions for CheckM can be found here:
+
+https://github.com/Ecogenomics/CheckM/wiki/Installation
+
+The above does not suggest Conda, but pip, which is another Python specific
+way of installing programs. I suggest you use Conda instead. There are 
+instructions for that here:
+
+https://hackmd.io/cMQgeGF6TOuuLJvCjQyo0Q#
+
+In brief, create a Conda environment for CheckM and install the necessary programs:
 
 ```
 conda create -n checkm python=2.7
 conda install checkm
 ```
 
-### Set CheckM data root
+### Download, unpack CheckM data and `setRoot`
 
-Set CheckM's data root to `/home/franzetti/data/checkm`, with this command:
+CheckM's database needs to be downloaded and unpacked. It can be found here:
+
+https://data.ace.uq.edu.au/public/CheckM_databases/
+
+Currently, the latest release is from 2015, which I have downloaded and unpacked
+in `/home/franzetti/data/checkm`. To avoid more downloads, you can use that copy.
+
+You need to tell CheckM where you've put the data, using the `data setRoot` command:
 
 ```
 checkm data setRoot ~franzetti/data/checkm/
