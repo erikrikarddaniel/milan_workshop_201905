@@ -16,7 +16,7 @@ conda install checkm
 Set CheckM's data root to `/home/franzetti/data/checkm`, with this command:
 
 ```
-checkm data setRoot
+checkm data setRoot ~franzetti/data/checkm/
 ```
 
 ## Running the binning
