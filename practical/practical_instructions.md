@@ -35,7 +35,8 @@ VMs (>=40 GiB). There's a smaller memory option, but it's not exposed by MetaWRA
 manually.
 
 ```
-checkm lineage_wf -x fa --reduced_tree metabat2_bins/ metabat2_bins.checkm 2>&1 | tee metabat2_bins.checkm.out
+checkm lineage_wf --tab_table -x fa --reduced_tree metabat2_bins/ metabat2_bins.checkm 2>&1 | tee metabat2_bins.checkm.out
+checkm lineage_wf --tab_table -x fa --reduced_tree maxbin2_bins/ maxbin2_bins.checkm 2>&1 | tee maxbin2_bins.checkm.out
 ```
 
 (Each set of bins took around 30 minutes on the VM.)
