@@ -37,3 +37,5 @@ manually.
 ```
 checkm lineage_wf -x fa --reduced_tree metabat2_bins/ metabat2_bins.checkm 2>&1 | tee metabat2_bins.checkm.out
 ```
+
+(Each set of bins took around 30 minutes on the VM.)
