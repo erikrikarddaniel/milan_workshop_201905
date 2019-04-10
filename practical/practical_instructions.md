@@ -63,3 +63,5 @@ checkm lineage_wf --tab_table -x fa --reduced_tree maxbin2_bins/ maxbin2_bins.ch
 ```
 metawrap bin_refinement -o metawrap_refinment -m 30 --quick -A metabat2_bins/ -B maxbin2_bins/ 2>&1 | tee metawrap_refinment.out
 ```
+
+The above took around two hours on the VM.
