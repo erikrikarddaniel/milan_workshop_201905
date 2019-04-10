@@ -58,10 +58,12 @@ checkm lineage_wf --tab_table -x fa --reduced_tree maxbin2_bins/ maxbin2_bins.ch
 
 (Each set of bins took around 30 minutes on the VM.)
 
+Compare the output from CheckM for the two binning programs!
+
 # Refining the bins with MetaWRAP
 
 ```
 metawrap bin_refinement -o metawrap_refinment -m 30 --quick -A metabat2_bins/ -B maxbin2_bins/ 2>&1 | tee metawrap_refinment.out
 ```
 
-The above took around two hours on the VM.
+(The above took around two hours on the VM.)
