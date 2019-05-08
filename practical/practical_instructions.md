@@ -55,6 +55,9 @@ Compare the output from CheckM for the two binning programs!
 
 # Refining the bins with MetaWRAP
 
+In contrast to the binning, MetaWRAP can run CheckM in small memory mode in the bin_refinement module
+by adding the --quick option.
+
 ```
 metawrap bin_refinement -o metawrap_refinment -m 30 --quick -A metabat2_bins/ -B maxbin2_bins/ 2>&1 | tee metawrap_refinment.out
 ```
