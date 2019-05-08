@@ -2,24 +2,17 @@
 
 ## Installing MetaWRAP
 
-## Installing CheckM and dependencies
+MetaWRAP is a wrapper for several useful programs for assembly-based annotation of
+metagenomes. Installing MetaWRAP will also install other programs (MEGAHIT, MetaBAT2
+MaxBin, CheckM etc.) that are useful, so installing MetaWRAP is a convenient way
+of getting access to the individual programs.
 
-Full installation instructions for CheckM can be found here:
+Moreover, you will have to the option of using the binning consolidation module in
+MetaWRAP, which is provided in MetaWRAP itself.
 
-https://github.com/Ecogenomics/CheckM/wiki/Installation
+Follow the instructions for "Better installation" at the MetaWRAP GitHub page:
 
-The above does not suggest Conda, but pip, which is another Python specific
-way of installing programs. I suggest you use Conda instead. There are 
-instructions for that here:
-
-https://hackmd.io/cMQgeGF6TOuuLJvCjQyo0Q#
-
-In brief, create a Conda environment for CheckM and install the necessary programs:
-
-```
-conda create -n checkm python=2.7
-conda install checkm
-```
+https://github.com/bxlab/metaWRAP
 
 ### Download, unpack CheckM data and `setRoot`
 
